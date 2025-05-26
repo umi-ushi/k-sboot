@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: "k-sboot"
+
+management:
+  server:
+    address: "127.0.0.1"
+    port: 8088
+  endpoints:
+    enabled-by-default: false # invalid all endpoints then specify endpoint service open
+    web:
+      base-path: /internal/actuator
+      exposure:
+        include: health,beans,caches,configprops,env,mappings,scheduledtasks
+  endpoint:
+    health:
+      enabled: true
+    beans:
+      enabled: true
+    caches:
+      enabled: true
+    mappings:
+      enabled: true
