@@ -11,7 +11,7 @@ management:
     web:
       base-path: /internal/actuator
       exposure:
-        include: health,beans,caches,configprops,env,mappings,scheduledtasks
+        include: health,beans,caches,configprops,env,mappings,scheduledtasks,metrics
   endpoint:
     health:
       enabled: true
@@ -22,4 +22,6 @@ management:
     caches:
       enabled: true
     mappings:
+      enabled: true
+    metrics:
       enabled: true
