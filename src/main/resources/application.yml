@@ -16,6 +16,7 @@ management:
     health:
       enabled: true
       show-details: always
+      custom: false
     beans:
       enabled: true
     caches:
