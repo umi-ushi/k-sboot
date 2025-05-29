@@ -1,6 +1,8 @@
 spring:
   application:
     name: "k-sboot"
+  profiles:
+    active: dev
 
 management:
   server:
